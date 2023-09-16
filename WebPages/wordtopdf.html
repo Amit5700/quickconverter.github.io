@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quick Converter</title>
+        <link rel="icon" href="./qcx.jpg" type="image/icon type"></title>
+        <!--<link rel="stylesheet" href="wordtopdfstyle.css">-->
+        <link rel="stylesheet" href="css/all.css">
+        <style>
+.qclogo
+{
+    align-items: left;
+    margin-bottom: 30%;
+}
+.head
+{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 58%;
+    top: -1%;
+    font-size: 50px;
+    font-family: 'Lucida Handwriting';
+    color: rgb(96, 31, 31);
+}
+.ptw
+{
+    position:absolute;
+    left: 22%;
+    top: 65%;
+}
+#pimg
+{
+    position: absolute;
+    top: 28%;
+    right:24%;
+}
+#wimg
+{
+    position: absolute;
+    top: 30%;
+    left: 18%;
+}
+.arrow1
+{
+    position: absolute;
+    left: 46%;
+    top: 45%;
+    font-size: 75px;
+    color: rgb(98, 19, 19);
+}
+.dbtn .down
+{
+    height: 30px;
+    width: 100px;
+    border-radius: 10%;
+    font-size: 18px;
+    background-color: rgb(185, 24, 24);
+    color: white;
+    border: none;
+    position: absolute;
+    left: 64%;
+    top: 64%;
+}
+.text
+{
+    font-size: 20px;
+    font-family: cursive;
+    position: absolute;
+    top: 75%;
+    left: 22%;
+}
+.text li
+{
+    font-size: 17px;
+    font-family: cursive;
+    
+}
+
+</style>
+<!--<script>
+    document.getElementById("run-arrow").addEventListener("click", () => {
+      // Send a POST request to the Node.js server to trigger the script execution
+      fetch("/run-script", { method: "POST" })
+        .then(response => response.text())
+        .then(data => {
+          console.log(data);
+        })
+        .catch(error => {
+          console.error("Error:", error);
+        });
+    });
+  </script>-->
+</head>
+<body>
+    <form action="/wordtopdfconvo" method="get">
+        <img class="qclogo" src="./qcx.jpg" height="100px" width="100px">
+    <h1 class="head">Quick Converter</h1>
+
+
+    
+        
+        <img src="word.png" height="250" width="250" id="wimg">
+        <img src="pdf.png" height="250" width="250" id="pimg">
+        <div class="arrow1"><a href="./wordtopdf.js"><i class="fa-solid fa-arrow-right" id="run-arrow"></i></a></div>
+    
+    <div>
+        <input class="ptw" type="file" id="pdf" >
+    </div>
+
+    <div class="dbtn">
+        <button class="down"><i class="fa-solid fa-arrow-down"></i></button>
+    </div>
+
+    <div class="text">
+        Convert your Word Document to PDF, easily, instantly and happyly.... <br>
+        Steps to use the convertor:
+        <ul>
+            <li>Upload the file which you want.</li>
+            <li>Click on the Arrow</li>
+            <li>Once converted, you will receive a alert, click on the download button.</li>
+            <li>Yay!, your file has been successfully converted..</li>
+        </ul>
+    </div>
+    </form>
+</body>
+</html>

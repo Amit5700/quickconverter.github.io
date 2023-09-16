@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Quick Converter</title>
+        <link rel="icon" href="./qcx.jpg" type="image/icon type">
+        <!--<link rel="stylesheet" href="accountstyle.css" >-->
+        <link rel="stylesheet" href="css/all.min.css">
+        <style>
+body
+{
+    background-color: rgb(255, 255, 255);
+}
+h2
+{
+    position: absolute;
+    top:30%;
+    left: 48%;
+    color: rgb(112, 32, 32);
+}
+table
+{
+    margin-left: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+th
+{
+    font-family: cursive;
+    color: rgb(139, 31, 31);
+}
+.cbtn
+{
+    height: 30px;
+    width: 130px;
+    bottom:15%;
+    position: absolute;
+    left: 40%;
+    color: rgb(255, 254, 254);
+    background-color: rgb(89, 28, 28);
+}
+.fname
+{
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid rgb(89, 28, 28);
+    box-sizing: none;
+    margin-left: 50px;
+}
+fieldset
+{
+    position: absolute;
+    top:30%;
+    left:32%;
+    border-radius: 10%;
+}
+.fa-regular fa-user
+{
+    size: 150px;
+}
+img
+{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right:42%;
+    top:8%;
+    
+}
+.fa-solid fa-eye
+{
+    margin-right: 30px;
+    cursor: pointer;
+    color: rgb(104, 36, 36);
+}
+        </style>
+        
+        <script>
+            function message()
+            {
+                alert("Account Created Successfullly");
+            }
+        </script>
+    </head>
+    <body>
+        <center><img src="./qcx.jpg">
+        <h2><i class="fa-regular fa-user"></i> SIGN UP</h2></center>
+        <form action="/RegistrationValidation" method="post">
+        <fieldset>
+        <table cellspacing="10px">
+            <tr>
+                <th>Name:</th>
+                <td><input type="text" name="fname" id="name" class="fn" size="30" required height="24px"></td>
+            </tr>
+            <tr>
+                <th>Email-Id:</th>
+                <td><input type="text" name="mail" id="mail" required class="mailid" size="30"></td>
+            </tr>
+            <tr>
+                <th>Password:</th>
+                <td><input type="password" name="p" id="pass" required class="pwd" size="30">
+                    <i class="fa-solid fa-eye"></i>
+                </td>
+            </tr>
+            <tr>
+                <th>Confirm Password:</th>
+                <td><input type="password" name="cp" id="cpass" required class="cpwd" size="30">
+                    <i class="fa-solid fa-eye"></i>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Create Account" class="cbtn" onclick="message()"></td>
+            </tr>
+        </table>
+        </fieldset>
+        </form>
+    </body>
+</html>
