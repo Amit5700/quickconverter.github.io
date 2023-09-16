@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>Quick Converter</title>
+        <!--<link rel="stylesheet" href="loginstyle.css">-->
+        <link rel="icon" href="/WebPages/qcx.jpg" type="image/icon type">
+        <style>
+body
+{
+    background-color: rgb(255, 255, 255);
+}
+.outborder
+{
+    margin-left: 40%;
+    margin-top: 90px;
+    height: 400px;
+    width: 310px;
+    border-radius: 5%;
+    border-color: rgb(227, 10, 10);
+}
+.inborder1
+{
+    margin-top: 35px;
+    margin-bottom: 10px;
+    border-radius: 20%;
+    color: rgb(207, 28, 28);
+    border-color: rgb(207, 28, 28);
+}
+.inborder2
+{
+    margin-top: 1px;
+    border-radius: 20%;
+    color: rgb(207, 28, 28);
+    border-color: rgb(207, 28, 28);
+}
+.ml
+{
+    font-size: 15px;
+}
+.ps
+{
+    font-size: 15px;
+}
+.em
+{
+    border: white;
+}
+.pw
+{
+    border: none;
+}
+.btn
+{
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(207, 28, 28);
+    border: none;
+    border-radius: 10%;
+    width: 60px;
+    height: 30px;
+}
+.fp
+{
+    margin-top: 10px;
+    padding-right: 122px;
+    color: rgb(227, 10, 10);
+}
+.acc
+{
+    margin-top: 250px;
+    color: rgb(227, 10, 10);
+}
+.head
+{
+    font-size: 50px;
+    font-family: 'Lucida Handwriting';
+    color: rgb(93, 20, 20);
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.head2
+{
+    margin-top: -23px;
+    margin-left: 120px;
+    color: rgb(121, 26, 26);
+}
+p
+{
+    margin-left: 800px;
+    font-size: 11px;
+}
+.qclogo
+{
+    height: 80px;
+    width: 80px;
+}
+        </style>
+    </head>
+    <body>
+        <center><h1 class="head">Quick Converter</h1></center>
+
+        <form action="/LoginValidation" method="post">
+            <fieldset class="outborder">
+                <center><img class="qclogo" src="./qcx.jpg"></center>
+                <br><br><h2 class="head2">Log In</h2>
+            <fieldset class="inborder1">
+                <legend class="ml">Mail-ID</legend>
+                <input type="email" name="mail" required class="em" id="mail"><br>
+            </fieldset>   
+            <fieldset class="inborder2">
+                <legend class="ps">Password</legend>
+                <input type="password" name="pass" required class="pw" id="pass"><br>
+            </fieldset>
+            <a class="fp" href="forgotpass.html">Forgot Password?</a>
+            <input type="submit" value="Login" class="btn">
+            <br><br><br>
+            <div>
+            <form action="/Registration">
+            <a class="acc" href="/Registration">Create Account!</a>
+            </form>
+            </div>
+            </fieldset>
+            <p>Terms of Use</p>
+        </form>
+    </body>
+</html>
